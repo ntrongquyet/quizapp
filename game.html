@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Quick Quiz</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="game.css">
+</head>
+
+<body>
+    <div class="container">
+        <div id="game" class="justify-content justify-center">
+            <div id="hud">
+                <div id="hud-item">
+                    <p class="hud-prefix">
+                        Question: <span id="questionCounter"></span>
+                    </p>
+                    <div id="processBar">
+                        <div id="processing"></div>
+                    </div>
+                </div>
+                <div id="hud-item">
+                    <div class="hud-prefix">
+                        Score
+                    </div>
+                    <h1 class="hud-main-text" id="score">
+                        0
+                    </h1>
+                </div>
+            </div>
+            <h2 id="question">What is the question?</h2>
+            <div class="choice-container">
+                <div class="choice-prefix">A</div>
+                <div class="choice-text" data-number="1">Choice 1</div>
+            </div>
+            <div class="choice-container">
+                <div class="choice-prefix">B</div>
+                <div class="choice-text" data-number="2">Choice 2</div>
+            </div>
+            <div class="choice-container">
+                <div class="choice-prefix">C</div>
+                <div class="choice-text" data-number="3">Choice 3</div>
+            </div>
+            <div class="choice-container">
+                <div class="choice-prefix">D</div>
+                <div class="choice-text" data-number="4">Choice 4</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="game.js" async defer></script>
+</body>
+
+</html>

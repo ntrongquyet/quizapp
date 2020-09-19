@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Congratulation</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+    <div class="container">
+        <div id="end" class="flex-center flex-column">
+            <h1 id="finalScore">0</h1>
+            <form>
+                <input type="text" name="username" id="username" placeholder="Name" />
+                <button type="submit" class="btn" id="saveScoreBtn" onClick="saveHighScore(event)" disabled>Save</button>
+            </form>
+            <a href="/game.html" class="btn">Play Again</a>
+            <a href="/highscores.html" class="btn">Highscores</a>
+        </div>
+    </div>
+
+    <script src="end.js" async defer></script>
+</body>
+
+</html>
